@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/inventory.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/js/bootstrap.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>.invetory | Get your sales here.</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <a href="#">inventory.</a>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Search" name="" id="">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="notification">
+                <a href="#"><i class="bi bi-bell"></i></a>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="background-color: #F6F7F9; border-radius: 30px;">
+                    <img src="photos/proflle pic.jpg" alt="" style="width: 25px; border-radius: 30px;"> Nikhil
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="settings">
+                <a href="#"><i class="bi bi-gear"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-box">
+        <div class="box navigation-box">
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="bi bi-speedometer"></i>Dashboard</a></li>
+                    <li><a href="inventory.html"><i class="bi bi-dropbox"></i></i>Inventory</a></li>
+                    <li><a href="purchase.html"><i class="bi bi-bag"></i></i>Purchase</a></li>
+                    <li><a href=""><i class="bi bi-box-arrow-in-down"></i></i>Returns</a></li>
+                    <li><a href="sales.html"><i class="bi bi-wallet2"></i>Sales</a></li>
+                    <li><a href="invoices.html"><i class="bi bi-receipt"></i>Invoices</a></li>
+                    <li><a href=""><i class="bi bi-people-fill"></i>Peoples</a></li>
+                    <li><a href=""><i class="bi bi-cash-coin"></i>Expenses</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="pages container-fluid">
+                <div class="pages-nav">
+                    <div class="left-page">
+                        <a href=""><i class="bi bi-wallet2"></i>Sales</a>
+                    </div>
+                </div>
+                <div class="extraction">
+                    <button type="button" class="btn btn-sm extraction-button add-product " data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #53B47F; color: white;"><i class="bi bi-plus-lg"></i>Add Sales </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Add Sales</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="add-product-form">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                          <label for="inputEmail4" class="form-label" style="width: 100%;">Product Name</label>
+                                          <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Product Type</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>Kitchen Utilities</option>
+                                              <option>...</option>
+                                            </select>
+                                          </div>
+                                        <div class="col-md-6">
+                                          <label for="inputPassword4" class="form-label">Prize</label>
+                                          <input type="number" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Numbers of Products</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                              <option>6</option>
+                                              <option>7</option>
+                                              <option>8</option>
+
+                                            </select>
+                                          </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Vender</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>Vender 1</option>
+                                              <option>Vender 2</option>
+                                              <option>Vender 3</option>
+                                              <option>Vender 4</option>
+                                              <option>5</option>
+                                              <option>6</option>
+                                              <option>7</option>
+                                              <option>8</option>
+
+                                            </select>
+                                          </div>
+                                      
+                                      </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn" style="background-color: #F4F5F7;" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn" id="liveToastBtn" style="background-color: #53B47F; color: white;">Add Sales</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <button type="button" class="btn btn-sm extraction-button" style="background-color: #F4F5F7;">Import</button>
+                    <div class="btn-group">
+                        <button class="btn btn-sm dropdown-toggle extraction-button" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #F4F5F7;">
+                            Export
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Export as Excel</a></li>
+                            <li><a href="">Export as PDF</a></li>
+                        </ul>
+                    </div>  
+                                 
+                </div>
+</div>
+ 
+<div class="sales-of-table">
+    <div class="sales-table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Product Date</th>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Vender</th>
+                <th>No. of Products</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>OD0002</td>
+                <td>20/07/2022</td>
+                <td>Bread Knife</td>
+                <td>KA00001</td>
+                <td>Vender 1</td>
+                <td>4</td>
+                <td><i class="bi bi-currency-rupee"></i>800</td>
+                <td><span class="badge bg-success" style="background-color: #53B47F; color: white;">Delivered</span></td>
+            </tr>
+
+            <tr>
+                <td>OD0004</td>
+                <td>20/07/2022</td>
+                <td>Bread Knife</td>
+                <td>KA00001</td>
+                <td>Vender 3</td>
+                <td>10</td>
+                <td><i class="bi bi-currency-rupee"></i>2000</td>
+                <td><span class="badge bg-warning text-dark">Not Delivered</span></td>
+            </tr>
+
+            <tr>
+                <td>OD0010</td>
+                <td>25/09/2022</td>
+                <td>Bread Knife</td>
+                <td>KA00001</td>
+                <td>Vender 1</td>
+                <td>1</td>
+                <td><i class="bi bi-currency-rupee"></i>200</td>
+                <td><span class="badge text-bg-danger">Order Canceled</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

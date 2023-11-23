@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/inventory.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/js/bootstrap.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>.invetory | Get your sales here.</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <a href="#">inventory.</a>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Search" name="" id="">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="notification">
+                <a href="#"><i class="bi bi-bell"></i></a>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="background-color: #F6F7F9; border-radius: 30px;">
+                    <img src="photos/proflle pic.jpg" alt="" style="width: 25px; border-radius: 30px;"> Nikhil
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="settings">
+                <a href="#"><i class="bi bi-gear"></i></a>
+            </div>
+
+            <div ></div>
+        </div>
+    </div>
+
+    <div class="flex-box">
+        <div class="box navigation-box">
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="bi bi-speedometer"></i>Dashboard</a></li>
+                    <li><a href="inventory.html"><i class="bi bi-dropbox"></i></i>Inventory</a></li>
+                    <li><a href="purchase.html"><i class="bi bi-bag"></i></i>Purchase</a></li>
+                    <li><a href=""><i class="bi bi-box-arrow-in-down"></i></i>Returns</a></li>
+                    <li><a href="sales.html"><i class="bi bi-wallet2"></i>Sales</a></li>
+                    <li><a href="invoices.html"><i class="bi bi-receipt"></i>Invoices</a></li>
+                    <li><a href=""><i class="bi bi-people-fill"></i>Peoples</a></li>
+                    <li><a href=""><i class="bi bi-cash-coin"></i>Expenses</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="pages container-fluid">
+                <div class="pages-nav">
+                    <div class="left-page">
+                        <a href=""><i class="bi bi-speedometer"></i>Dashboard</a>
+                    </div>
+                </div>
+                <div class="extraction">
+                    <button type="button" class="btn btn-sm extraction-button" style="background-color: #F4F5F7;">Month
+                        to Date</button>
+                    <button type="button" class="btn btn-sm extraction-button" style="background-color: #F4F5F7;">Year
+                        to Date</button>
+                    <div class="btn-group">
+                        <button class="btn btn-sm dropdown-toggle extraction-button" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #F4F5F7;">
+                            Export
+                        </button>
+                        <ul class="dropdown-menu">
+                            ...
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sales-purchase">
+
+                <div class="sales-overview ">
+
+                    <div class="sales-heading">
+                        <div class="sales-left">
+                            <p>Sales Overview</p>
+                        </div>
+                        <div class="sales-right">
+                            <div class="btn-group">
+                                <button class="btn btn-sm sales-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    ...
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="elements">
+                    <div class="elements-raw">
+                        <div class="elements-icon">
+                            <img src="icons/sales.svg" alt="">
+                        </div>
+                        <div class="elements-count">
+                            <p>Sales <br>
+                            <span>2000</span></p>
+                        </div>
+                    </div>
+
+                    <div class="elements-raw">
+                        <div class="elements-icon" style="background-color: #FFF4DE;">
+                            <img src="icons/wallet.svg"  alt="">
+                        </div>
+                        <div class="elements-count">
+                            <p>Revenue <br>
+                            <span>12400</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="elements">
+                    <div class="elements-raw">
+                        <div class="elements-icon" style="background-color: #FFF1EE;">
+                            <img src="icons/budget.svg" alt="">
+                        </div>
+                        <div class="elements-count">
+                            <p>Cost <br>
+                            <span>12500</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="elements-raw">
+                        <div class="elements-icon">
+                            <img src="icons/income.svg" style="background-color: #E6F2F2;" alt="">
+                        </div>
+                        <div class="elements-count">
+                            <p>Profit <br>
+                            <span>6100</span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="purchase-overview">
+                    
+                    <div class="purchase-heading">
+                        <div class="purchase-left">
+                            <p>Purchase Overview</p>
+                        </div>
+                        <div class="purchase-right">
+                            <div class="btn-group">
+                                <button class="btn btn-sm sales-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    ...
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="elements" style="padding-left: 30px;">
+                        <div class="elements-raw">
+                            <div class="elements-icon" style="background-color: #F6EAFE;">
+                                <img src="icons/shopping-bag.svg" alt="">
+                            </div>
+                            <div class="elements-count">
+                                <p>No. of Purchase<br>
+                                <span>56</span></p>
+                            </div>
+                        </div>
+    
+                        <div class="elements-raw">
+                            <div class="elements-icon" style="background-color: #FCE9EB;">
+                                <img src="icons/cancel-order.svg"  alt="">
+                            </div>
+                            <div class="elements-count">
+                                <p>Cancel Order <br>
+                                <span>02</span></p>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="elements" style="padding-left: 30px;">
+                        <div class="elements-raw">
+                            <div class="elements-icon" style="background-color: #FFF1EE;">
+                                <img src="icons/budget.svg" alt="">
+                            </div>
+                            <div class="elements-count">
+                                <p>Cost <br>
+                                <span>700</span></p>
+                            </div>
+                        </div>
+    
+                        <div class="elements-raw">
+                            <div class="elements-icon" style="background-color: #F8EDF3;">
+                                <img src="icons/return.svg"  alt="">
+                            </div>
+                            <div class="elements-count">
+                                <p>Returns<br>
+                                <span>10</span></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div> 
+            </div>
+
+            <div class="raw2">
+                <div class="raw2-box">
+                    <div class="raw2-heading">
+                        <div class="raw2-left">
+                            <p>Inventory Summary</p>
+                        </div>
+                        <div class="raw2-right">
+                            <div class="btn-group">
+                                <button class="btn btn-sm sales-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    ...
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="raw2-content">
+                        <div class="raw2-content-box">
+                            <div class="Summary">
+                            <img src="icons/box.svg" alt="">
+                            <p>Quantity in hands <br>
+                            <span>256</span></p>
+                        </div>
+                    </div>
+                        <div class="raw2-content-box">
+                            <div class="Summary">
+                                <img src="icons/air-delivery.png" alt="">
+                                <p>Will be Received <br>
+                                <span>56</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="raw2-box">
+                    <div class="raw2-heading">
+                        <div class="raw2-left">
+                            <p>Product Details</p>
+                        </div>
+                        <div class="raw2-right">
+                            <div class="btn-group">
+                                <button class="btn btn-sm sales-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    ...
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details-table">
+                        <div class="table">
+                            <table>
+                                <tr>
+                                    <th>Low Stock Items</th>
+                                    <td>02</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Item Group</th>
+                                    <td>14</td>
+                                </tr>
+
+                                <tr>
+                                    <th>No. of Items</th>
+                                    <td>105</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="raw2-box">
+                    <div class="raw2-heading">
+                        <div class="raw2-left">
+                            <p>No. of Users</p>
+                        </div>
+                        <div class="raw2-right">
+                            <div class="btn-group">
+                                <button class="btn btn-sm sales-button" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    ...
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="raw2-content">
+                        <div class="raw2-content-box">
+                            <div class="Summary">
+                            <img src="icons/users.svg" alt="">
+                            <p>Total Customers<br>
+                            <span>18k</span></p>
+                        </div>
+                    </div>
+                        <div class="raw2-content-box">
+                            <div class="Summary">
+                                <img src="icons/add-friend.png" alt="">
+                                <p>Total Suppliers<br>
+                                <span>36</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="graph">
+            <canvas id="myChart" style="width:100%;max-width:1200px"></canvas>
+        </div>
+        </div>
+
+      
+    </div>
+
+  
+
+<script>
+const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  }
+  ,
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+
+</script>
+</body>
+
+</html>
